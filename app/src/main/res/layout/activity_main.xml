@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_get_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="BASE_URL/member/checkId/{userId}"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edt_userId_get"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="userId : "/>
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="GET TEST"/>
+        <TextView
+            android:id="@+id/txt_get_result"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_post_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="BASE_URL/member/signup/@Body"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edt_userNm_post"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="userNm : "/>
+        <EditText
+            android:id="@+id/edt_userId_post"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="userId : "/>
+        <EditText
+            android:id="@+id/edt_userPw_post"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="userPw : "/>
+        <EditText
+            android:id="@+id/edt_phoneNo_post"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="phoneNo : "/>
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Post Test"/>
+        <TextView
+            android:id="@+id/txt_post_result"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
