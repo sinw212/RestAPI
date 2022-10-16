@@ -32,9 +32,10 @@ class MainActivity : AppCompatActivity() {
                             var resource: GetTestResponse? = response.body()
                             var code: Int? = resource?.code
                             var message: String? = resource?.message
-                            var dataArrayList: Any? = resource?.data
+                            var data: GetTestData? = resource?.data
+                            var checkIdYn: String? = data?.checkIdYn
                             Log.d("rest통신", "onResponse 성공: " + resource?.toString())
-                            binding.txtGetResult.setText("Result : " + code + ", " + message + ", " + dataArrayList)
+                            binding.txtGetResult.setText("Result : " + code + ", " + message + ", " + data + ", " + checkIdYn)
                         }else{
                             // 통신이 실패한 경우(응답코드 3xx, 4xx 등)
                             Log.d("rest통신", "onResponse 실패")

@@ -3,7 +3,8 @@ package com.example.restapitest
 data class GetTestResponse(
         var code: Int? = null,
         var message: String? = null,
-        var data: Any? = null
+        var data: GetTestData? = null
+//        var data: Any? = null
 //        var data: ArrayList<GetTestData>? = null
 )
 
